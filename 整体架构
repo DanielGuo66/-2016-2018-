@@ -1,0 +1,29 @@
+news_dashboard/
+├── data/
+│   └── news.csv                    # 原始数据（2万条）
+├── scripts/                        # Python 预处理脚本
+│   ├── 1_build_index.py            # 生成检索索引
+│   ├── 2_keyword_trend.py          # 关键词趋势统计
+│   ├── 3_network_analysis.py       # 人物机构共现网络
+│   └── 4_belt_road_map.py          # 一带一路国家统计
+├── docs/                           # GitHub Pages 根目录
+│   ├── index.html                  # 首页（导航+概览）
+│   ├── search.html                 # 页面1：检索
+│   ├── trend.html                  # 页面2：关键词趋势
+│   ├── network.html                # 页面3：人物机构网络
+│   ├── map.html                    # 页面4：一带一路热力图
+│   ├── css/
+│   │   └── style.css               # 共用样式
+│   ├── js/
+│   │   ├── search.js
+│   │   ├── trend.js
+│   │   ├── network.js
+│   │   └── map.js
+│   └── data/                       # 预处理生成的 JSON
+│       ├── index.json              # 检索用（日期+标题+分类+id）
+│       ├── articles/               # 按月的正文（按需加载）
+│       ├── trend_data.json         # 关键词趋势数据
+│       ├── network_nodes.json      # 网络节点（人物/机构）
+│       ├── network_links.json      # 网络边（共现关系）
+│       └── belt_road_data.json     # 一带一路国家统计
+└── README.md
