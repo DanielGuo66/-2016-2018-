@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新闻联播数字人文项目</title>
+</head>
+<body>
+    <h1>新闻联播数据集（2016-2018）</h1>
+    <p>项目正在建设中。下一步将添加检索功能。</p>
+</body>
+</html>
